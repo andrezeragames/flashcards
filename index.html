@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flash Cards de Curiosidades</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlashCards de Curiosidades</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>🧠 Flash Cards de Curiosidades</h1>
-    <p>Clique no cartão para descobrir a resposta.</p>
-</header>
+<h1>🧠 FlashCards de Curiosidades</h1>
 
-<main>
+<div class="container">
 
-<div id="card" class="card">
+<div class="flashcard" id="flashcard">
 
-    <div class="front">
-        Clique em "Próximo"
-    </div>
+<div class="frente">
+<h2>Curiosidade</h2>
+<p id="pergunta"></p>
+<small>Clique para revelar</small>
+</div>
 
-    <div class="back">
-        Resposta
-    </div>
+<div class="verso">
+<h2>Resposta</h2>
+<p id="resposta"></p>
+<small>Clique para voltar</small>
+</div>
 
 </div>
 
-<div class="buttons">
-    <button onclick="flipCard()">Virar</button>
-    <button onclick="nextCard()">Próximo</button>
+<button onclick="proximoCard()">Nova Curiosidade</button>
+
 </div>
-
-<p id="counter"></p>
-
-</main>
 
 <script src="script.js"></script>
 
